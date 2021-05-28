@@ -116,7 +116,7 @@ class App extends Component {
       this.state.input)
       .then(response => {
         if(response) {
-          fetch('https://enigmatic-spire-85293.herokuapp.com/image',{
+          fetch('http://localhost:9999/image',{
             method: 'put',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
